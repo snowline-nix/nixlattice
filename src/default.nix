@@ -1,2 +1,6 @@
-inputs: inputs.nixlattice-general.lib
-  // inputs.nixlib.lib
+inputs:
+
+{
+  lib = inputs.nixlattice-general.lib
+    // inputs.nixlib.lib;
+}

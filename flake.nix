@@ -5,5 +5,5 @@
 
   inputs.nixlattice-general.url = "github:snowline-nix/nixlattice-general";
 
-  outputs = inputs: { lib = import ./src inputs; };
+  outputs = inputs: import ./src inputs;
 }
