@@ -1,8 +1,11 @@
 {
-  nixlib,
+  nixlib-general,
+  nixllization,
 
   ...
 }:
 {
-  lib = nixlib.lib;
+  lib = nixlib-general.lib // {
+    transforms = nixllization.lib;
+  };
 }
